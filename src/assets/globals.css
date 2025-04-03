@@ -1,0 +1,187 @@
+@import './catppuccin.css';
+@import './catppuccin-frappe-highlight-js.css';
+@import './theme.css';
+
+@font-face {
+	font-family: 'DM Serif Display';
+	src: url('../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('woff2'),
+		url('../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('../assets/fonts/Noto_Serif/NotoSerif-VariableFont_wdth_wght.ttf') format('woff2'),
+		url('../assets/fonts/Noto_Serif/NotoSerif-VariableFont_wdth_wght.ttf') format('woff');
+}
+
+:root {
+	font-size: 20px;
+	font-family: 'Noto Serif', serif;
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	:root {
+		font-size: 15px;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+a:link {
+	color: var(--blue);
+}
+
+/* normal link */
+a:visited {
+	color: var(--mauve);
+}
+
+/* visited link */
+a:active {
+	color: var(--pink);
+}
+
+/* clicked link */
+a:hover {
+	color: var(--rosewater);
+}
+
+/* mouse over link */
+
+b {
+	color: var(--teal);
+}
+
+i {
+	color: var(--blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav * {
+	margin: 1em 0em;
+	font-family: 'DM Serif Display', serif;
+}
+
+h1 {
+	font-size: 2.4rem;
+	color: var(--flamingo);
+}
+
+h2 {
+	font-size: 1.8rem;
+	color: var(--pink);
+}
+
+h3 {
+	font-size: 1.6rem;
+	color: var(--blue);
+}
+
+h4 {
+	font-size: 1.4rem;
+	color: var(--sapphire);
+}
+
+h5,
+h5 i {
+	font-size: 1.2rem;
+	color: var(--green);
+}
+
+h6 {
+	font-size: 1rem;
+	color: var(--pink);
+}
+
+figcaption {
+	font-size: 0.8rem;
+	font-style: italic;
+	color: var(--pink);
+}
+
+p {
+	font-size: 1rem;
+	color: var(--text);
+	line-height: 1.5;
+}
+
+hr {
+	color: var(--surface0);
+}
+
+span {
+	line-height: 1.5;
+}
+
+li {
+	color: var(--lavender);
+	margin-bottom: 7px;
+}
+
+details {
+	margin: 0 10px;
+	padding: 20px;
+	color: var(--teal);
+	background-color: var(--surface0);
+}
+
+details p {
+	margin-left: 30px;
+}
+
+blockquote,
+blockquote p {
+	color: var(--flamingo);
+}
+
+/*  scroll behavior */
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+/* footnote animation */
+/* used for both footnote and superscript components */
+.pulse {
+	animation: pulse ease-in-out 0.8s 2;
+}
+
+@keyframes pulse {
+	0% {
+		scale: 1;
+	}
+
+	50% {
+		scale: 1.65;
+	}
+
+	100% {
+		scale: 1;
+	}
+}
+
+.parentblock {
+	color: var(--teal);
+}
